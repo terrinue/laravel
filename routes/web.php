@@ -18,7 +18,7 @@ use Illuminate\Http\Request;
 * 本のダッシュボード表示(books.blade.php)
 */
 Route::get('/', function () {
-    return view('welcome');
+    return view('books');
 });
 
 /**
