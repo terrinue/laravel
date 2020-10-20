@@ -29,9 +29,11 @@ Route::post('/books', 'BooksController@store');
 */
 Route::delete('/book/{book}', 'BooksController@delete'); 
 
+// 認証機能
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+// ログイン画面
+Route::get('/home', 'BooksController@index')->name('home');
 
 //更新画面を開く
 Route::post('/booksedit/{books}', 'BooksController@booksedit'); 
